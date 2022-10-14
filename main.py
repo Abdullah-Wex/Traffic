@@ -78,6 +78,10 @@ for i in range(0,5):
   driver.set_page_load_timeout(5000)
   driver.get("https://www.google.com/maps/@21.5495652,39.1973127,11.65z/data=!5m1!1e1")
   time.sleep(3)
+  with open("page_source"+str(i)+".html", "w") as f:
+    f.write(driver.page_source)
+  
+  
   driver.execute_script('document.getElementById("omnibox-container").remove()')
   # driver.execute_script('document.getElementById("itamenu").remove()')
   driver.execute_script('x = document.evaluate("/html/body/div[3]/div[9]/div[4]/div/div/div/div[1]/div/div/div/div",document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue')
