@@ -72,7 +72,8 @@ driver.execute_cdp_cmd("Page.setGeolocationOverride", params)
 # chrome_options.add_experimental_option("detach", True)
 
 driver.set_page_load_timeout(5000)
-driver.get("https://www.google.com/maps/@21.5495652,39.1973127,11.65z/data=!5m1!1e1")
+#driver.get("https://www.google.com/maps/@21.5495652,39.1973127,11.65z/data=!5m1!1e1")
+driver.get("https://www.gps-coordinates.net/my-location")
 time.sleep(3)
 with open("page_source.html", "w") as f:
   f.write(driver.page_source)
