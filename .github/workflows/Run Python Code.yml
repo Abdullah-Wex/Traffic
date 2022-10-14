@@ -24,7 +24,7 @@ jobs:
     
     - name: install python packages
       run: |
-        python -m pip install --upgrade pip selenium datetime webdriver_manager chromedriver_autoinstaller
+        python -m pip install --upgrade pip selenium datetime webdriver_manager chromedriver_autoinstaller pyvirtualdisplay
     
     - name: execute py script # run main.py
       run: python main.py
