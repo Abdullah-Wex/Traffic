@@ -1,12 +1,9 @@
 name: Run Python Code
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '* * * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
