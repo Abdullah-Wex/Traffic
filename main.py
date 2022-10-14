@@ -51,13 +51,13 @@ for option in options:
     
 driver = webdriver.Chrome(options = chrome_options)
 
-params = {
-    "latitude": 21.427526,
-    "longitude": 39.271313,
-    "accuracy": 100
-}
+# params = {
+#     "latitude": 21.427526,
+#     "longitude": 39.271313,
+#     "accuracy": 100
+# }
 
-driver.execute_cdp_cmd("Page.setGeolocationOverride", params)
+# driver.execute_cdp_cmd("Page.setGeolocationOverride", params)
 
 #options = Options()
 # options.add_argument("--window-size=1920,1200")
