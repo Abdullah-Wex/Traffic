@@ -33,8 +33,8 @@ chrome_options = webdriver.ChromeOptions()
 options = [
   # Define window size here
    "--window-size=1200,1200",
-    "--ignore-certificate-errors"
- 
+  "--ignore-certificate-errors"
+  
     #"--headless",
     #"--disable-gpu",
     #"--window-size=1920,1200",
@@ -48,7 +48,7 @@ options = [
 for option in options:
     chrome_options.add_argument(option)
 
-    
+chrome_options.headless = True
 driver = webdriver.Chrome(options = chrome_options)
 
 #params = {
@@ -71,7 +71,7 @@ driver = webdriver.Chrome(options = chrome_options)
 # chrome_options = Options()
 # chrome_options.add_experimental_option("detach", True)
 
-for i in range(0,8):
+for i in range(0,30):
   date = datetime.today()
   folder = r' '.join(['-'.join([str(date.year),str(date.month),str(date.day)])])
   folder
@@ -117,6 +117,6 @@ for i in range(0,8):
       f.write(canvas.screenshot_as_png)
   print(datetime.today())
   if i != 4:
-      time.sleep(55)
+      time.sleep(58)
 driver.quit()
 
