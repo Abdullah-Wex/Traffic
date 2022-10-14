@@ -95,7 +95,7 @@ for i in range(0,5):
   driver.execute_script('x = document.evaluate("/html/body/div[3]/div[9]/div[1]/div[2]",document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue')
   driver.execute_script('x.remove()')
   #canvas = driver.find_element(By.XPATH,'//div[contains(@aria-label,"خريطة")]')
-  canvas = driver.find_element(By.XPATH,'/html/body/div[3]/div[9]/div[1]/div[3]')
+  canvas = driver.find_element(By.XPATH,'//div[contains(@role,"appl")]')
   # actions = ActionChains(driver)
   # actions.click_and_hold(canvas)
   # action.perform()
