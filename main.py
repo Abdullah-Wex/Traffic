@@ -18,8 +18,10 @@ options.headless = True
 # driver = webdriver.Chrome(options=options,service=Service(ChromeDriverManager().install()))
 # driver <- 9
 # driver = webdriver.Chrome("D:\Files\MyFiles\ChromeDriver\chromedriver1.exe",options=options,keep_alive=True)
-driver = webdriver.Chrome(options=options,keep_alive=True)
+chrome_service = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
+driver = webdriver.Chrome(service=chrome_service,options=options)
 # driver.quit()
+
 
 
 # chrome_options = Options()
