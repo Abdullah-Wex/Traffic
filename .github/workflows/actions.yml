@@ -1,8 +1,8 @@
-name: Run Python
+name: Run Python Code
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # At 00:00 on Monday
+    - cron: '* * * * *' # At 00:00 on Monday
 
 permissions:
   contents: write
