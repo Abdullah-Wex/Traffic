@@ -8,6 +8,8 @@ from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.utils import ChromeType
+from selenium.webdriver.chrome.service import Service
 
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
