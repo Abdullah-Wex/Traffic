@@ -71,7 +71,7 @@ driver = webdriver.Chrome(options = chrome_options)
 # chrome_options = Options()
 # chrome_options.add_experimental_option("detach", True)
 
-for i in range(0,5):
+for i in range(0,8):
   date = datetime.today()
   folder = r' '.join(['-'.join([str(date.year),str(date.month),str(date.day)])])
   folder
