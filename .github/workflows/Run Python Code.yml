@@ -10,6 +10,7 @@ jobs:
     steps:
     - name: checkout repo content
       uses: actions/checkout@v2 # checkout the repository content to github runner
+      with: { ref: main }
       
     - name: setup-chromedriver
       uses: nanasess/setup-chromedriver@v1.1.0
